@@ -1,0 +1,113 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Inter";
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 50px 0px;
+    background: linear-gradient(90deg, #878276 0%, #98958D 50%, #ACA8A3 100%);
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.page h1 {
+    font-family: "Caveat";
+    font-size: 60px;
+    font-weight: 500;
+    color: #3C3C3C;
+    text-align: center;
+    text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.251), 0px 4px 4px rgba(255, 255, 255, 0.269);
+}
+
+.input input {
+    width: 300px;
+    padding: 10px 20px;
+    font-size: large;
+    background-color: #1e1e1e82;
+    outline: 0;
+    border: none;
+    color: #EBEBEB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.288);
+}
+
+.input input::placeholder {
+    color: #979797;
+}
+
+.input button {
+    border: none;
+    outline: 0;
+    padding: 10px 20px;
+    font-size: large;
+    background-color: #C49634;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.image {
+    margin-top: 20px;
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.image a img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.alert{
+    display: none;
+    font-size: x-large;
+    font-weight: 400;
+    color: #3C3C3C;
+}
+
+.showMore{
+    padding: 10px 30px;
+    font-size: larger;
+    outline: 0;
+    border: none;
+    background-color: #C49634;
+    color: white;
+    display: none;
+    cursor: pointer;
+    margin: 50px;
+}
+
+button:hover{
+    background-color: #a67d26;
+    transition: all ease-in-out 0.2s;
+}
+
+@media (max-width : 1000px) {
+    .image{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width : 650px) {
+    .image{
+        grid-template-columns: 1fr;
+    }
+    .page input{
+        margin-left: 5px;
+        width: 200px;
+    }
+    button:hover{
+        background-color: #C49634;
+        transition: all ease-in-out 0.2s;
+    }
+}
+
